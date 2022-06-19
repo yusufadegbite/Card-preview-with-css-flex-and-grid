@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>flexbox</title>
 
-   <link href='https://fonts.google.com/specimen/Big+Shoulders+Display' rel='stylesheet'>
-   <link rel="stylesheet" href="https://fonts.google.com/specimen/Lexend+Deca">
-
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100&display=swap" rel="stylesheet">
     <style type="text/css" media="all">
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap')
 
         body {
-            width: 355px;
+            width: 375px;
             font-family:;
             background: hsl(0, 0%, 95%);
             font-size: 15px;
@@ -47,7 +48,7 @@
         .h21 {
             text-align: left;
             color: hsl(0, 0%, 95%);
-            font-family: 'Big Shoulders Display', Segoe UI;
+            font-family: 'Big Shoulders Display', cure;
             font-weight: 700;
             margin-left: 10px;
         }
@@ -103,6 +104,53 @@
         .link {
             text-decoration: none;
         }
+        
+        .gd {
+            background: black;
+            margin-top: 50px;
+            width: 355px;
+            height: 60%;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 50px 50px 50px;
+            grid-gap: 5px;
+            grid-template-areas: "area1 area1 area1 area1 area2 area2"
+            "area3 area3 area3 area4 area4 area4"
+            "area3 area3 area3 area5 area5 area5";
+            margin-right: 20px;
+            margin-left: 20px;
+             }
+             
+        .item11 {
+            background: tomato;
+            grid-area: area1;
+            
+            
+        }
+        .item22 {
+            background: orange;
+            border: ;
+            grid-area: area2;
+        }
+        .item33 {
+            background: #328E2D;
+            border: ;
+            grid-area: area3;
+            
+        }
+        .item44 {
+            background: #00ADFF;
+            border: ;
+            grid-area: area4;
+        }
+        .item55 {
+            background: #00ADFF;
+            border: ;
+            grid-area: area5;
+        }
 
 
 
@@ -111,9 +159,6 @@
 
 </head>
 <body>
-    <br />
-    <br />
-    <br />
     <br />
     <br />
     <br />
@@ -175,6 +220,38 @@
         </div>
 
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section class="gd">
+         <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="grid-container">
+            <div class="item11">
+                
+            </div>
+            <div class="item22">
+                
+            </div>
+            <div class="item33">
+               
+            </div>
+            <div class="item44">
+                
+            </div>
+            <div class="item55">
+                
+            </div>
+            
+        </div>
+        
+    </section>
 
 </body>
 </html>
